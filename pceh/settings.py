@@ -85,11 +85,17 @@ DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'pcehmmisdb',
+        # 'USER': 'postgres',
+        # 'PASSWORD': 'ayinla1234',
+        # 'HOST': 'localhost',
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pcehmmisdb',
-        'USER': 'postgres',
-        'PASSWORD': 'ayinla1234',
-        'HOST': 'localhost',
+        'NAME': 'dc7ct7pnq9hbuv',
+        'USER': 'hbugccrdcivxyq',
+        'PASSWORD': '4848ab0de8ea33d69dfdde2968a29f4561cfac5a4c09ab525349797372e40bd2',
+        'HOST': 'ec2-44-195-100-240.compute-1.amazonaws.com',
+        'PORT': '5432'
 
     }
 }
@@ -135,10 +141,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 django_heroku.settings(locals())
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
 
 JAZZMIN_SETTINGS = {
